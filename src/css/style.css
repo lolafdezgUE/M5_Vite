@@ -1,0 +1,149 @@
+.pelicula {
+    display: flex;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+  
+  .pelicula:hover {
+    transform: scale(1.02);
+  }
+  
+  .pelicula img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-right: 2px solid #333;
+  }
+  
+  .overlay {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .overlay p {
+    font-size: 0.9rem;
+    color: #ccc;
+    max-height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; 
+  }
+  
+  .buscador input {
+    width: 90%;
+    max-width: 500px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    outline: none;
+  }
+  
+  .buscador input:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02); 
+  }
+  
+  .buscador input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+
+
+.boton-regresar {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+.boton-regresar:hover {
+    background-color: rgb(159, 159, 159);
+    color: #1a1a1a;
+}
+
+.detalle-pelicula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 80px;
+    position: relative;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.detalle-pelicula .contenido {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.detalle-pelicula img {
+    width: 120px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+}
+
+.infoPelicula {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.infoPelicula h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.infoPelicula p {
+    margin-bottom: 10px;
+}
+
+.infoPelicula p strong {
+    font-weight: bold;
+    color: #FFD700; 
+}
+
+  
